@@ -8,7 +8,7 @@ h1, h2, h3, h4, p{
 }
 .container{
   margin: 0 auto;
-  overflow: hidden;
+  /* overflow: hidden; */
 }
 img{
   vertical-align: bottom;
@@ -56,16 +56,28 @@ main .container{
 .about .container{
   display: flex;
   align-items: center;
-  padding-top: 32px;
+  padding-top: 8vw;
+  position: relative;
 }
 .about .container div + div{
   margin-top: 10%;
+}
+.about .border{
+  aspect-ratio: 5 / 2;
+  width: 69vw;
+  border: 4px solid #000;
+  position: absolute;
+  top: 16vw;
+  left: 24%;
+  z-index: 1;
 }
 .about img{
   border: 4px solid #000;
   object-fit: cover;
   width: 50vw;
   box-shadow: 10px 5px 5px orange;
+  position: relative;
+  z-index: 2;
 }
 .about h2{
   color: #fff;
@@ -74,6 +86,7 @@ main .container{
   left: -26%;
   width: 100vw;
   text-shadow: 3px 3px 3px #333;
+  z-index: 3;
 }
 .about h2 span{
   color: #000;
@@ -83,7 +96,7 @@ main .container{
 .about p{
   padding-top: 16px;
   padding-left: 3%;
-  font-size: 2.5vw;
+  font-size: 2.4vw;
 }
 /* .value */
 .value{
