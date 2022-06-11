@@ -37,6 +37,7 @@ header .container{
 }
 header h1{
   font-size: 6vw;
+  line-height: 1;
 }
 header span{
   color: #fff;
@@ -104,13 +105,13 @@ main .container{
 }
 
 .about p{
-  padding-top: 16px;
+  padding-top: 3vw;
   padding-left: 3%;
-  font-size: 2.4vw;
+  font-size: 2.3vw;
 }
 /* .value */
 .value{
-  margin-top: 64px;
+  margin-top: 16vw;
 }
 .value h2{
   font-size: 7vw;
@@ -137,7 +138,7 @@ main .container{
 .value ul{
   display: flex;
   justify-content: space-between;
-  padding: 16px 0;
+  padding: 4vw 0;
 }
 .value li{
   width: 30%;
@@ -148,7 +149,7 @@ main .container{
   width: 60%;
   object-fit: cover;
   border-radius: 50%;
-  padding-bottom: 16px;
+  margin-bottom: 4vw;
 }
 .value ul li p{
   text-align: center;
@@ -157,7 +158,7 @@ main .container{
 /* .member */
 .member .container{
   display: flex;
-  margin-top: 64px;
+  margin-top: 16vw;
 }
 .member img{
   aspect-ratio: 1 / 1;
@@ -202,7 +203,7 @@ main .container{
 }
 .career ul{
   margin: 0;
-  padding-left: 20px;
+  padding-left: 4.5vw;
 }
 .career li{
   list-style: circle;
@@ -210,7 +211,7 @@ main .container{
 }
 .message{
   border: 2px solid #333;
-  margin-top: 32px;
+  margin-top: 8vw;
   padding: 3%;
 }
 .message h3{
@@ -221,11 +222,11 @@ main .container{
   font-size: 3vw;
 }
 .contact{
-  margin-top: 32px;
+  margin-top: 12vw;
   padding-bottom: 5vw;
 }
 .contact h2{
-  font-size: 5vw;
+  font-size: 6vw;
 }
 .contact p{
   padding-top: 3%;
