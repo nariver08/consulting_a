@@ -45,10 +45,11 @@ header span{
 }
 header ul{
   display: flex;
+  padding: 0;
 }
 header a{
   font-size: 3vw;
-  padding: 20px;
+  padding: 20px 10px;
   border-radius: 50%;
 }
 header a:hover{
