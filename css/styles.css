@@ -2,13 +2,15 @@
 body{
   margin: 0;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
+  background: rgba(100, 200, 100, 0.8);
+  overflow-y: visible;
+  overflow-x: hidden;
 }
 h1, h2, h3, h4, p{
   margin: 0;
 }
 .container{
   margin: 0 auto;
-  /* overflow: hidden; */
 }
 img{
   vertical-align: bottom;
@@ -22,16 +24,16 @@ a{
   color: #000;
   transition: opacity .3s;
 }
-a:hover{
+/* a:hover{
   opacity: 0.5;
-}
+} */
 /* header */
 header .container{
   display: flex;
   justify-content: space-between;
   align-items: center;
   background: #eee;
-  padding: 2% 3%;
+  padding: 5px 3%;
 }
 header h1{
   font-size: 6vw;
@@ -45,12 +47,19 @@ header ul{
 }
 header a{
   font-size: 3vw;
-  padding: 22px;
+  padding: 20px;
+  border-radius: 50%;
+}
+header a:hover{
+  background: rgb(190, 246, 190);
 }
 /* main */
+main{
+  background: rgb(226, 250, 226);
+  margin: 0 3%;
+}
 main .container{
-  margin: 16px 3% 0;
-  padding: 0;
+  padding: 1vw;
 }
 /* .about */
 .about .container{
@@ -58,6 +67,7 @@ main .container{
   align-items: center;
   padding-top: 8vw;
   position: relative;
+  overflow-y: visible;
 }
 .about .container div + div{
   margin-top: 10%;
@@ -115,7 +125,7 @@ main .container{
 .value .top-message{
   transform: translateY(-50%);
   width: 70%;
-  background: #fff;
+  background: rgb(226, 250, 226);
   border: 4px solid orange;
 }
 .value p{
@@ -154,7 +164,7 @@ main .container{
   border: 4px solid #000;
   object-fit: cover;
   width: 50vw;
-  box-shadow: 10px 5px 5px orange;
+  box-shadow: 10px 5px 5px rgba(100, 200, 100, 0.8);
 }
 .member .info{
   width: 40%;
@@ -171,7 +181,7 @@ main .container{
   border: 2px solid #333;
   margin-top: 5%;
   margin-left: 10%;
-  width: 100%;
+  width: calc(100% - 1vw );
   height: 78%;
 }
 .member .name{
@@ -212,6 +222,7 @@ main .container{
 }
 .contact{
   margin-top: 32px;
+  padding-bottom: 5vw;
 }
 .contact h2{
   font-size: 5vw;
@@ -223,7 +234,6 @@ main .container{
 
 /* footer */
 footer .container{
-  margin-top: 32px;
   padding: 3% 5%;
   background: #eee;
   text-align: center;
